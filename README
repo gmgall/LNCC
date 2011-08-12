@@ -1,1 +1,5 @@
 Esse repositório mantém os scripts criados por mim para auxiliar meu trabalho de sysadmin no LNCC.
+
+* mysql_dump.sh
+
+Faz dumps dos bancos de dados MySQL. Usar no crontab.
