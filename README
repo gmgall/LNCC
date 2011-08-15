@@ -3,3 +3,7 @@ Esse repositório mantém os scripts criados por mim para auxiliar meu trabalho 
 * mysql_dump.sh
 
 Faz dumps dos bancos de dados MySQL. Usar no crontab.
+
+* nc2ldif.py
+
+Gera arquivo LDIF para o servidor LDAP do LNCC usando como entrada um dump em CSV da base "contatos" e a base passwd (unshadowed) da nisserver
