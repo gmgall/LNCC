@@ -7,3 +7,7 @@ Faz dumps dos bancos de dados MySQL. Usar no crontab.
 * nc2ldif.py
 
 Gera arquivo LDIF para o servidor LDAP do LNCC usando como entrada um dump em CSV da base "contatos" e a base passwd (unshadowed) da nisserver
+
+* addmailuser.sh
+
+Cria Maildir do usuário dentro de seu HOME
