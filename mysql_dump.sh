@@ -11,6 +11,9 @@
 # --
 # 04/02/2011 - Adicionado suporte a tratamento de sinais
 # por Guilherme <guilherme.gall@ntl.com.br>
+# --
+# 18/11/2011 - Adicionada a funcionalidade de apagar dumps antigos
+# por Guilherme <guilherme.gall@ntl.com.br>
 
 # -*-*-*- Configuração -*-*-*- 
 # Altere as variáveis abaixo para mudar o comportamento do script
@@ -29,6 +32,9 @@ DBLIST="/var/adm/scripts/bancos-mysql"
 
 # Prioridade da mensagem nos logs, ver man syslog p/ mais informações
 LOGPRIO="local0.notice"
+ 
+# Arquivos mais antigos que DAYS serão apagados
+DAYS=90
 
 # -*-*-*- Implementação -*-*-*- 
 # Procure alterar o comportamento do script a partir das variáveis acima
@@ -74,3 +80,6 @@ for DB in $(cat "$DBLIST"); do
         logger -t ${0%.sh} -p $LOGPRIO "Não foi feito o dump do banco $DB (sem novas alterações)"
     fi
 done
+
+# Apagando dumps com mais de DAYS dias
+find "$DUMPDIR" -mtime +"$DAYS" -delete
