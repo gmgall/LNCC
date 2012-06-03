@@ -11,3 +11,7 @@ Gera arquivo LDIF para o servidor LDAP do LNCC usando como entrada um dump em CS
 * addmailuser.sh
 
 Cria Maildir do usuário dentro de seu HOME
+
+* reloc_uids.py
+
+Realoca UIDs baseado num intervalo de UIDs inválidos e num UID de base para a realocação.
