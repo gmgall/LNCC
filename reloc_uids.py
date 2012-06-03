@@ -9,7 +9,7 @@
 # by Guilherme Magalhães Gall   <guilherme.gall@ntl.com.br>
 #                               <gmgall@gmail.com>
 #
-# 03/07/2011 - Initial version
+# 03/06/2012 - Initial version
 
 
 import pwd
