@@ -15,3 +15,7 @@ Cria Maildir do usuário dentro de seu HOME
 * reloc_uids.py
 
 Realoca UIDs baseado num intervalo de UIDs inválidos e num UID de base para a realocação.
+
+* bkp_prj.sh 
+
+Faz rsync do volume DRBD que mantém os Maildirs dos usuários para um volume num storage externo, montado via NFS. Verifica se os volumes estão montados antes de prosseguir, se não estiverem, envia um e-mail reportando falha. Usar no crontab.
